@@ -1,0 +1,25 @@
+.sidebarListItem{
+    display: flex;
+    padding: 7px;
+    align-items: center;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+}
+.sidebarIcon{
+    margin-right: 15px;
+    font-size: 30px;
+    color:rgb(27, 118, 254)
+}
+.sidebarIconMore{
+    background-color: rgb(216, 215, 215);
+    color: rgba(100, 100, 100, 0.822);
+    font-size: 22px;
+    border-radius: 50%;
+    margin-right:15px;
+}
+.sidebarListItem:hover{
+    background-color: white ;
+    color: black;
+}

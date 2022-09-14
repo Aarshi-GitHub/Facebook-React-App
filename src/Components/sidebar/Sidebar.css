@@ -1,0 +1,54 @@
+.sidebar{
+    flex:2.5;
+    height: calc( 100vh - 50px);
+    position: sticky;
+    top : 50px;
+    overflow-y: auto;
+    background-color: rgba(246, 243, 243, 0.932);
+}
+.sidebarContainer{
+    padding:20px;
+}
+.sidebarList{
+    padding: 0px;
+    margin: 0px;
+    list-style:none;
+}
+.sidebarHr{
+    margin:10px 0;
+}
+.sidebarFriendList{
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+.sidebar::-webkit-scrollbar{
+    display:none;
+}
+@media only screen and (max-width:992px) {
+    .sidebar{
+        flex: 1.5;
+    }
+    .sidebarContainer{
+        padding: 16px;
+    }
+    .sidebarListItemText{
+        display: none;
+    }
+    .sidebarFriendName{
+        display: none;
+    }
+}
+@media only screen and (max-width:768px) {
+    .sidebar{
+        display: block;
+    }
+    .sidebarContainer{
+        padding: 5px;
+    }
+}
+@media only screen and (max-width:550px) {
+    .sidebar{
+        display: none;
+    }
+}
