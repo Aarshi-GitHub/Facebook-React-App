@@ -1,22 +1,17 @@
 import React from 'react'
-import { Component } from 'react';
 import './Sidebar.css'
-import { MdRssFeed } from "react-icons/md";
-import { MdChat } from "react-icons/md";
-import { MdVideocam } from "react-icons/md";
-import { MdOutlinePeopleAlt } from "react-icons/md";
-import { MdBookmarkBorder } from "react-icons/md";
-import { MdShoppingCart } from "react-icons/md";
-import { MdEvent } from "react-icons/md";
-import { MdBrightness4 } from "react-icons/md";
-import { MdOutlineExitToApp } from "react-icons/md";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdRssFeed,
+    MdChat,MdVideocam,
+    MdOutlinePeopleAlt,MdBookmarkBorder,
+    MdShoppingCart,MdEvent,
+    MdBrightness4,MdOutlineExitToApp,
+    MdKeyboardArrowDown } from "react-icons/md";
 import SidebarList from '../sidebarList/SidebarList';
 import Friends from '../Friends/Friends';
 import {Users} from "../../userData"
+import { Link } from 'react-router-dom';
 
-class Sidebar extends Component{
-    render(){
+const Sidebar = ({toggleThemeFunc})=>{
         return(
             <div className='sidebar'>
                 <div className="sidebarContainer">
@@ -27,8 +22,12 @@ class Sidebar extends Component{
                     <SidebarList Icons={<MdBookmarkBorder className='sidebarIcon'/>} text="Bookmarks"/>
                     <SidebarList Icons={<MdShoppingCart className='sidebarIcon'/>} text="Marketplace"/>
                     <SidebarList Icons={<MdEvent className='sidebarIcon'/>} text="Events"/>
+                    <span onClick={toggleThemeFunc}>
                     <SidebarList Icons={<MdBrightness4 className='sidebarIcon'/>} text="Theme"/>
+                    </span>
+                    <Link to="/" style={{textDecoration:"none"}}>
                     <SidebarList Icons={<MdOutlineExitToApp className='sidebarIcon'/>} text="Logout"/>
+                    </Link>
                     <SidebarList Icons={<MdKeyboardArrowDown className='sidebarIconMore'/>} text="Show More"/>
                     <hr className='sidebarHr' color='lightgrey'/>
                     <ul className="sidebarFriendList">
@@ -37,6 +36,5 @@ class Sidebar extends Component{
                 </div>
             </div>
         );
-    }
 }
 export default Sidebar;

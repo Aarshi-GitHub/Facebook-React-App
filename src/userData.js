@@ -22,20 +22,20 @@ export const Users = [
         name:"Suhani",
         username:"Suhani_22",
         profilePicture:"assets/person/person4.jpg"
-    },
-    {
-        id:5,
-        name:"Jenny",
-        username:"Jenny_25",
-        profilePicture:"assets/person/person5.jpg"
     }
+    // ,
+    // {
+    //     id:5,
+    //     name:"Jenny",
+    //     username:"Jenny_25",
+    //     profilePicture:"assets/person/person5.jpg"
+    // }
 ]
 
 export const Posts = [
     {
         userId:4,
         id:1,
-        title:"To be happy, you must be your own sunshine.",
         body:"There is nothing more beautiful than a rainbow, but it takes both rain and sunshine to make a rainbow.",
         photo:"assets/post/post1.jpg",
         date:"8 mins ago",
@@ -43,9 +43,8 @@ export const Posts = [
         comments:"35"
     },
     {
-        userId:5,
+        userId:2,
         id:2,
-        title:"Childhood = no problems in life.",
         body:"Children are magic because they look for it.",
         photo:"assets/post/post2.jpg",
         date:"1 hour ago",
@@ -55,7 +54,6 @@ export const Posts = [
     {
         userId:1,
         id:3,
-        title:"Random Scribble",
         body:"Drawing is an art of Expression",
         photo:"assets/post/post3.jpg",
         date:"10 hours ago",
@@ -63,9 +61,8 @@ export const Posts = [
         comments:"150"
     },
     {
-        userId:5,
+        userId:3,
         id:4,
-        title:"Brain Storming Time",
         body:"Comment the Answer within 10 seconds",
         photo:"assets/post/post4.jpg",
         date:"15 hours ago",
@@ -75,7 +72,6 @@ export const Posts = [
     {
         userId:2,
         id:5,
-        title:"Fun Fact",
         body:"Tell your parents to buy lots of chocolate for you ",
         photo:"assets/post/post5.jpg",
         date:"1 day ago",
@@ -85,7 +81,6 @@ export const Posts = [
     {
         userId:3,
         id:6,
-        title:"Having Fun @Camp",
         body:"Having Peace Time in lap of Mother Nature",
         photo:"assets/post/post6.jpg",
         date:"3 days ago",
@@ -93,19 +88,17 @@ export const Posts = [
         comments:"300"
     },
     {
-        userId:1,
-        id:7,
-        title:"Drinks Time !!",
-        body:"Relief Time with Lime in Summers",
+        userId : 1,
+        id : 7,
+        body : "Relief Time with Lime in Summers",
         photo:"assets/post/post7.jpg",
-        date:"5 days ago",
-        like:"600",
-        comments:"100"
+        date : "5 days ago",
+        like : "600",
+        comments : "100"
     },
     {
         userId:2,
         id:8,
-        title:"Old School Hobbies ;)",
         body:"Practising Calligraphy after almost year.",
         photo:"assets/post/post8.jpg",
         date:"7 days ago",
@@ -115,7 +108,6 @@ export const Posts = [
     {
         userId:4,
         id:9,
-        title:"Everybody meet Jack",
         body:"This is my new pet, isn't it cute ",
         photo:"assets/post/post9.jpg",
         date:"7 days ago",
@@ -126,23 +118,23 @@ export const Posts = [
 export const UserOnline = [
     {
         id:1,
-        name:"Sam",
-        username:"Sam_22",
-        email:"samabc@example.com",
+        name:"Narendra Modi",
+        username:"Narendra_Modi_80",
+        email:"narendra@example.com",
         profilePicture:"assets/user/user1.jpg"
     },
     {
         id:2,
-        name:"Taylor",
-        username:"Taylor_35",
-        email:"taylor@example.com",
+        name:"Amit Shah",
+        username:"Amit_Shah_55",
+        email:"amit@example.com",
         profilePicture:"assets/user/user2.jpg"
     },
     {
         id:3,
-        name:"Selena",
-        username:"Selena_30",
-        email:"selena@example.com",
+        name:"Rahul Gandhi",
+        username:"Rahul_50",
+        email:"rahul@example.com",
         profilePicture:"assets/user/user3.jpg"
     },
     {
@@ -200,5 +192,26 @@ export const UserOnline = [
         username:"Marie_25",
         email:"marie@example.com",
         profilePicture:"assets/user/user11.jpg"
+    },
+    {
+        id:12,
+        name:"Sam",
+        username:"Sam_22",
+        email:"samabc@example.com",
+        profilePicture:"assets/user/user12.jpg"
+    },
+    {
+        id:13,
+        name:"Taylor",
+        username:"Taylor_35",
+        email:"taylor@example.com",
+        profilePicture:"assets/user/user13.jpg"
+    },
+    {
+        id:14,
+        name:"Selena",
+        username:"Selena_30",
+        email:"selena@example.com",
+        profilePicture:"assets/user/user14.jpg"
     }
 ]

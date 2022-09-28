@@ -1,0 +1,68 @@
+.profileRightSide{
+    flex:3.5;
+    padding: 0 20px 0 0;
+}
+.profileRightSideHeading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.profileRightSideTitle{
+    font-size: 18px;
+    font-weight: 500;
+}
+.editButton{
+    display: flex;
+    font-weight: 450;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 10px;
+    background-color: #2d7df6f4;
+    color: aliceblue;
+    cursor: pointer;
+}
+.profileRightSideInfo{
+    margin-bottom: 30px;
+}
+.profileRightSideItem{
+    margin-bottom: 10px;
+}
+.profileRightSideItemKey{
+    font-weight: 450;
+    margin-right: 10px;
+}
+.profileRightSideItemVal{
+    font-weight: 300;
+}
+.profileRightSideFollowings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.profileRightSideFollowing{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.profileRightSideFolImg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.profileRightSideFolName{
+    align-self: center;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .profileRightSide{
+        display: none;
+    }
+}

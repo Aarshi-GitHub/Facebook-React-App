@@ -7,16 +7,18 @@ import { MdMoreVert,
     MdChatBubbleOutline,
     MdShare} from "react-icons/md";
 import {Users} from "../../userData"
+import { Link } from 'react-router-dom';
 
 const Post = ({post}) => {
-    const user = Users.filter((u)=> u.id===post.userId)[0]
   return (
     <div className='post'>
         <div className="postContainer">
             <div className='postTop'>
                 <div className='postTopLeft'>
-                    <img src={require(`../../${user.profilePicture}`)} alt="" className='postProfileImg'/>
-                    <span className='postUsername'>{user.username}</span>
+                    <Link to="/profile/username">
+                    <img src={require(`../../${Users.filter((u)=> u.id===post.userId)[0].profilePicture}`)} alt="" className='postProfileImg'/>
+                    </Link>
+                    <span className='postUsername'>{Users.filter((u)=> u.id===post.userId)[0].username}</span>
                     <span className='postDate'>{post.date}</span>
                 </div>
                 <div className='postTopRight'>

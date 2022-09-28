@@ -1,0 +1,149 @@
+.editProfileCont{
+    display: flex;
+}
+.profileRight{
+    flex:10;
+}
+.profileCover{
+    height: 320px;
+    position:relative;
+}
+.profileBackImg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.profileUserImg{
+    position: absolute;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 150px;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.923);
+}
+.profileInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profileInfoName{
+    font-size: 24px;
+}
+.profileFullInfo{
+    font-weight: 300;
+}
+.editProfileRightBottom{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    box-shadow: 2px 2px 20px 5px rgba(201,201,210,0.48);
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+}
+.top h1{
+    color: gray;
+    font-size: 20px;
+}
+.bottom{
+    box-shadow: 2px 2px 20px 5px rgba(201,201,210,0.48);
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+}
+.bottom .left img{
+    width:200px;
+    height: 200px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    margin: 40px 10px 40px 40px;
+}
+.left{
+    flex:1;
+}
+.right{
+    flex: 2;
+}
+
+.bottom .right form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.formInput{
+    display: block;
+    width: 70%;
+    margin-top:10px;
+    align-items: center;
+}
+.formInput .editLabel{ 
+    display: block;
+    align-items: center;
+    gap: 5px;
+}
+.icon{
+    font-size: 25px;
+    cursor: pointer;
+}
+.bottom .right form input{
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.bottom .right form input:focus{
+    outline:none;
+}
+.updateButton{
+    width:150px;
+    padding:10px;
+    background-color: #3873e9;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width : 790px){
+    .left{
+        align-items: center;
+    }
+    .bottom .left img{
+        width:150px;
+        height: 150px;
+        border-radius: 50%;
+        margin:40px auto;
+    }
+    .right{
+        flex:2;
+    }
+    .formInput{
+        width:90%;
+    }
+
+}
+
+@media only screen and (max-width: 576px){
+    .bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left img{
+        width:10px;
+        height: 10px;
+        border-radius: 50%;
+        align-self: center;
+    }
+    .formInput{
+        width:100%;
+    }
+}

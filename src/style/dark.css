@@ -1,0 +1,48 @@
+.dark *{
+    background-color: black;
+    color: rgb(204, 204, 204);
+}
+.dark .navbarContainer *{
+    color: white;
+}
+
+.dark .sidebarListItem:hover {
+    color: rgb(54, 54, 54);
+    background-color: rgb(200, 200, 200);
+}
+
+.dark .sidebarListItem:hover *{
+    color: rgb(54, 54, 54);
+    background-color: rgb(200, 200, 200);
+}
+
+.dark .rightbarOnline{
+    background-color: rgb(77, 239, 49);
+}
+
+.dark .editButton {
+    background-color: rgb(175, 175, 175);
+    color: black;
+    font-weight: 550;
+}
+
+.dark .shareFirst input{
+    border-bottom: 2px solid rgb(211, 211, 211);
+}
+
+.dark .storyCard span{
+    background-color: transparent;
+}
+
+.dark .cardProfile{
+    border: 3px solid black;
+}
+
+.dark .editButton *{
+    background-color: rgb(175, 175, 175);
+    color: black;
+}
+.dark .updateButton {
+    background-color: rgb(175, 175, 175);
+    color: black;
+}

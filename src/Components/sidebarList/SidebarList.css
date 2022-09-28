@@ -21,5 +21,7 @@
 }
 .sidebarListItem:hover{
     background-color: white ;
-    color: black;
+}
+.sidebarListItem:hover *{
+    background-color: white ;
 }

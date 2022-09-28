@@ -5,6 +5,7 @@ import { FaSearch } from "react-icons/fa";
 import { BsPersonFill } from "react-icons/bs";
 import { BsFillChatDotsFill } from "react-icons/bs";
 import { BsBellFill } from "react-icons/bs";
+import {Link} from "react-router-dom"
 
 class Navbar extends Component{
     render(){
@@ -13,7 +14,9 @@ class Navbar extends Component{
             <div className="navbarContainer">
                 <div className="navbarLeft">
                     <span className='logo'>
-                        <FaFacebook className='logo-icon'/>
+                        <Link to="/home">
+                            <FaFacebook className='logo-icon'/>
+                        </Link>
                     </span>
                 </div>
                 <div className="navbarCenter">
@@ -24,8 +27,12 @@ class Navbar extends Component{
                 </div>
                 <div className="navbarRight">
                     <div className="navbarLinks">
+                    <Link to="/home" style={{textDecoration:"none",color:"black"}}>
                         <span className='navbarLink'>Homepage</span>
+                    </Link>
+                    <Link to="/profile/username" style={{textDecoration:"none",color:"black"}}>
                         <span className='navbarLink'>Timeline</span>
+                    </Link>
                     </div>
                     <div className="navbarIcons">
                         <div className="navbarIconItem">
@@ -41,7 +48,9 @@ class Navbar extends Component{
                             <div className="navbarIconBadge">8</div>
                         </div>
                     </div>
+                    <Link to="/profile/username">
                     <img src={require("../../assets/person/user.jpg")} alt='User' className='navbarImg'/>
+                    </Link>
                 </div>
             </div>
         );
